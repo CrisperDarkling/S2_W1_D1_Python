@@ -13,9 +13,11 @@ def num(x):
         return "small"
 print(num(11))
 
+
 def are_same(x,y):
     return x == y
 print(are_same(5,4))
+
 
 def size(x,y):
     if x > y:
@@ -25,6 +27,7 @@ def size(x,y):
     else:
         return "Samez"
 print (size(9,9))
+
 
 x=0
 total=0
@@ -40,3 +43,41 @@ def contains(x, y, n):
         x=x+1
     return False
 print (contains(1,10,7))
+
+
+
+s = "ABCDEFGHIJKLM"
+
+result = s[0:4]
+
+print (result)
+
+
+person = {
+    "name":"Richard",
+    "age":"43",
+    "favourite colour":"Yellow"
+}
+print(person["favourite colour"])
+
+
+def count_upper_case(message):
+    return (sum([2 for c in message if c.isupper()]) + sum([1 for c in message if c.islower()]))
+    
+print(count_upper_case("Hello World How Are You!?"))
+
+
+
+message = "HelloWorld"
+
+scores = [1, 2]
+
+as_TF = [c.isupper() for c in message]
+as_10 = [int(c) for c in as_TF]
+as_scores = [scores[c] for c in as_10]
+print(sum(as_scores))
+
+
+
+
+
