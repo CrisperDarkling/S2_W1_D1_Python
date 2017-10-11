@@ -77,7 +77,23 @@ as_10 = [int(c) for c in as_TF]
 as_scores = [scores[c] for c in as_10]
 print(sum(as_scores))
 
+--------------------------------------
+
+def sumlist(l):
+    if l = []:
+        return 0
+    retrun l[0] + sumlist(l[1:])
+    
+print(sumlist([1, 2, 5, 9, 13]))
+
+def sumloop(l):
+    total = 0
+    for n in l:
+        total +=n
+    return total
+
+---------------------------------------
 
 
 
-
+[1, 2, 3]       same as     [i for i in range (4)]
